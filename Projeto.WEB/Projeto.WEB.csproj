@@ -98,6 +98,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ClienteModelCadastro.cs" />
+    <Compile Include="Models\ClienteModelConsulta.cs" />
+    <Compile Include="Models\ClienteModelEdicao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -109,10 +112,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\Projeto.BLL\Projeto.BLL.csproj">
+      <Project>{f9ab5cb3-c007-462d-a272-fc70ded1dc2c}</Project>
+      <Name>Projeto.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Projeto.DAL\Projeto.DAL.csproj">
       <Project>{82247883-f7f1-49f9-90ed-09e7d9cbc4f9}</Project>
       <Name>Projeto.DAL</Name>
